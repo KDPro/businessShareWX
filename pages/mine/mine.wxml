@@ -1,0 +1,15 @@
+<!-- 个人中心 -->
+<view class='mine'>
+  <view class='mine_header' style='background: url(../../images/mine_bg.png);'>
+    <view class='change_header' bindtap='changeHeader'>
+      <image src='{{src}}'></image>
+    </view>
+    <!-- <view class='mine_title'><text bindtap='regest'>注册</text><text class='segmentation'>/</text><text bindtap='login'>登录</text></view> -->
+  </view>
+  <view class='mine_list'>
+    <view wx:for="{{mineList}}" wx:key="{{index}}" bindtap='chose' data-index='{{index}}'>
+      <icon class='iconfont {{item.icon}}'style='color: {{item.color}}'></icon>
+      <text>{{item.title}}</text>
+    </view>
+  </view>
+</view>

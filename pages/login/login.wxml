@@ -1,0 +1,20 @@
+<!-- <view class="login"><image src='{{src}}'></image></view> -->
+<view>
+  <view class='login_title'>登录</view>
+  <view class='login_info'>
+    <view class="itemView">
+          <text class="iconfont icon-iconfuzhi"></text>
+          <input class="input" name="userName" placeholder="请输入电话号码"
+          bindinput="userNameInput" bindblur="userNameVerification" placeholder-style="font-size: 12px"/>
+        </view>
+        <view class="itemView">
+          <text class="iconfont icon-xiugaimima"></text>
+          <input class="input" name="usePwd" password placeholder="请输入密码"
+          bindinput="passWdInput" bindblur="userPwdVerification" placeholder-style="font-size: 12px"/>
+        </view>
+        <view>
+          <button class='loginbtn' bindtap="listenerLogin">登录</button>
+        </view>
+  </view>
+  <view class='regest' bindtap='regest'>注册</view>
+</view>

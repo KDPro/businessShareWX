@@ -1,0 +1,32 @@
+.user_card{
+  text-align: center;
+  padding: 20px 0 30px;
+  color: #616161;
+}
+.upload{
+  width: 65%;
+  padding-bottom: 20%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 0 auto;
+  -webkit-display:flex;
+  display:flex;
+  -webkit-justify-content:center;
+  justify-content:center;
+}
+.upload icon{
+  font-size: 40px;
+  color: #ddd;
+  margin-top: 22%;
+}
+.upload_btn{
+  width: 65%;
+  margin: 0 auto;
+  text-align: center;
+  height: 35px;
+  line-height: 35px;
+  background-color: #0085e2;
+  margin-top: 50px;
+  border-radius: 20px;
+  color: #fff;
+}

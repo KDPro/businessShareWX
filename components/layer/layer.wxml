@@ -1,0 +1,21 @@
+<view class="layer" wx:if="{{modalShow}}">
+ <view class='layerBox'>
+    <view class="layerHeader">{{title}}</view>
+    <view class='input'>
+      <text>{{inputList.name}}:</text>
+      <input type='{{inputList.type}}' placeholder='{{inputList.placeholder}}'  bindinput='inputVal' placeholder-style="font-size: 12px"></input>
+    </view>
+    <view class='input'>
+      <text>{{inputList.phone}}:</text>
+      <input type='{{inputList.type}}' placeholder='{{inputList.placeholder1}}'  bindinput='inputVal1' placeholder-style="font-size: 12px"></input>
+    </view>
+    <view class='input'>
+      <text>{{inputList.company}}:</text>
+      <input type='{{inputList.type}}' placeholder='{{inputList.placeholder2}}'  bindinput='inputVal2' placeholder-style="font-size: 12px"></input>
+    </view>
+    <view class="groupBtn clear">
+        <view class="btnConfirm" bindtap='confirm'>确定</view>
+        <view class="btnCancel" bindtap='cancel'>取消</view>
+      </view>
+ </view>
+</view>  

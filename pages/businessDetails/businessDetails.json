@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "layer": "../../components/layer/layer"
+  },
+  "navigationBarTitleText": "商机详情"
+}

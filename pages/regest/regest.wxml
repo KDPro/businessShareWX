@@ -1,0 +1,38 @@
+
+
+<view class='login'>
+  <view class='title'>
+    <text>完善个人信息</text>
+  </view>
+
+  <!-- 登录信息模块 -->
+  <view class='mesage_info'>
+    <view class="section">
+        <view class="itemView">
+          <text>姓名 :</text>
+          <input class="input" placeholder="请输入姓名"
+          bindinput="userNameInput" placeholder-style="font-size: 12px"/>
+        </view>
+        <view class="itemView">
+          <text>电话 <text class='sart'>*</text>:</text>
+          <input class="input" placeholder="请输入电话"
+          bindinput="phoneInput" placeholder-style="font-size: 12px"/>
+        </view>
+        <view class="itemView">
+          <text>公司 :</text>
+          <input class="input" placeholder="请输入公司"
+          bindinput="comInput" placeholder-style="font-size: 12px"/>
+        </view>
+        <view class="itemView">
+          <text>公司简介:</text>
+          <textarea class="input" placeholder="请输入公司简介"
+          bindinput="comDesInput" placeholder-style="font-size: 12px"></textarea>
+        </view>
+        <view>
+          <button class='loginbtn' bindtap="listenerRegest">确定</button>
+        </view>
+    </view>
+    <!-- <view class='login_btn' bindtap='login'>登录</view> -->
+  </view>
+
+</view>

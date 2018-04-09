@@ -1,0 +1,47 @@
+.mine{
+  width: 100%;
+  height: 100%;
+  background-color: #efefef;
+}
+.mine_header{
+  width: 100%;
+  padding-bottom: 10%;
+  overflow: hidden;
+}
+.change_header{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  margin: 20px auto 0;
+}
+.change_header image{
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+.mine_title{
+  text-align: center;
+  padding-top: 20px;
+  color: #fff;
+  font-size: 14px;
+}
+.segmentation{
+  padding: 0 10px;
+}
+.mine_list {
+  background-color: #fff;
+}
+.mine_list view{
+  width: 100%;
+  height: 55px;
+  border-bottom: 1px solid #ddd;
+  line-height: 55px;
+}
+.mine_list view icon{
+  font-size: 22px;
+  padding: 0 6px 0 15px;
+  vertical-align: middle;
+}
+.mine_list view  text{
+  vertical-align: middle;
+}

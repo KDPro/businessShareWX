@@ -1,0 +1,13 @@
+<!-- 商机发布 -->
+<view class='send'>
+  <view>商机标题 <text class='sart'>*</text>:</view>
+  <input class='title' placeholder='请输入商机标题' type='text' placeholder-style="font-size: 12px" 
+  value="{{title}}"
+  bindinput='titleF'></input>
+  <view>商机内容 <text class='sart'>*</text>:</view>
+  <textarea class='content' placeholder='请输入内容' placeholder-style="font-size: 12px" maxlength="500" 
+  value="{{content}}"
+  bindinput='contentF'></textarea>
+  <view class='send_btn' bindtap='{{cId==""?"sendBusiness":"editBusiness"}}' data-id="{{id}}">{{cId==""?"马上发布":"修改商机"}}</view>
+  <view class='mine_business' bindtap='myBusiness'>我的商机</view>
+</view>

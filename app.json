@@ -1,0 +1,48 @@
+{
+  "pages":[
+    "pages/businessDetails/businessDetails",
+    "pages/index/index",
+    "pages/business/business",
+    "pages/send/send",
+    "pages/signUpBusiness/signUpBusiness",
+    "pages/mine/mine",
+    "pages/mineBusiness/mineBusiness",
+    "pages/regest/regest",
+    "pages/login/login"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#0085e2",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"#fff"
+  },
+  "tabBar": {
+    "selectedColor":"#0085e2",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "selectedIconPath": "images/index.png",
+        "iconPath": "images/index1.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/business/business",
+        "selectedIconPath": "images/business.png",
+        "iconPath": "images/business1.png",
+        "text": "商机大厅"
+      },
+      {
+        "pagePath": "pages/send/send",
+        "selectedIconPath": "images/send.png",
+        "iconPath": "images/send1.png",
+        "text": "商机发布"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "selectedIconPath": "images/me.png",
+        "iconPath": "images/me1.png",
+        "text": "个人中心"
+      }
+    ]
+  }
+}

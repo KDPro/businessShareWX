@@ -1,0 +1,54 @@
+<!-- 轮播图 -->
+<swiper indicator-dots="{{indicatorDots}}" class='swiper'
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+    <swiper-item class="swiperItem">
+      <image src="{{item.path}}" class="slide-image iamge"/>
+      <view>
+        <text>{{item.content}}</text>
+      </view>
+    </swiper-item>
+  </block>
+</swiper>
+
+<!-- 商机列表 -->
+  <view class='businessList' wx:for="{{businessList}}" wx:key="{{index}}">
+        <view class='topBar'>
+           <view class='bar'></view>  
+          <view class='bar1'>
+            <view 
+            catchtap='attOrSign' 
+            data-type="{{(item.signtype==null||item.signtype == 1)?1:0}}"
+            data-index="{{index}}"
+            data-id="{{item.id}}">关注: <icon class='iconfont {{(item.signtype==null||item.signtype == 1)?"icon-shoucang":"icon-guanzhu red"}}'></icon> {{item.attention==null?0:item.attention}} </view>
+            <view 
+            catchtap='attOrSign' 
+            data-type="2"
+            data-index="{{index}}"
+            data-id="{{item.id}}">报名: <icon class='iconfont {{(item.signtype==null||item.signtype == 0)?"icon-hezuo":"icon-hezuoshixin red"}}'></icon> {{item.signUp==null?0:item.signUp}} </view>
+          </view>
+           <!-- <view class='bar'>
+             <view wx:if="{{item.activity>=15}}">活跃</view>
+            <view wx:if="{{item.activity<15}}">一般</view>
+            <view>推荐</view>  
+          </view>  -->
+          <!-- <view class='bar1'>
+            <view>关注: <text>{{item.browsing}}</text></view>
+            <view>报名: <text>{{item.signUp}}</text></view>
+          </view> -->
+        </view>
+        <view class='top' >
+          <view class='header'>
+            <image src='{{item.url}}'></image>
+            <view>{{item.username}}</view>
+          </view>
+          <view class='content'>
+            <view class='title'>{{item.title}}</view>
+            <view class='con'>{{item.des}}</view>
+          </view>
+        </view> 
+        <view class='bottom'>
+          <view><text>{{item.cDate}}</text>发布</view>
+          <view bindtap='details' data-id="{{item.id}}">查看详情》</view>
+        </view>
+  </view>

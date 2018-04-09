@@ -1,0 +1,87 @@
+<!-- 商机详情 -->
+
+<view class='topBar'>
+  <view class='bar'>
+  </view>
+            <view class='bar1'>
+            <view 
+            catchtap='attOrSign' 
+            data-type="{{(bD.signtype==null||bD.signtype == 1)?1:0}}"
+            data-index="{{index}}"
+            data-id="{{bD.id}}">关注: <icon class='iconfont {{(bD.signtype==null||bD.signtype == 1)?"icon-shoucang":"icon-guanzhu red"}}'></icon> {{bD.attention==null?0:bD.attention}} </view>
+            <view
+            catchtap='attOrSign' 
+            data-type="2"
+            data-index="{{index}}"
+            data-id="{{bD.id}}">报名: <icon class='iconfont {{(bD.signtype==null||bD.signtype == 0)?"icon-hezuo":"icon-hezuoshixin red"}}'></icon> {{bD.signUp==null?0:bD.signUp}} </view>
+          </view>
+          
+</view>
+<!-- 人员详情 -->
+<view class='user'>
+  <view class='userInfo'>
+    <view class='header'>
+      <image src='{{bD.url}}'></image>
+    </view>
+    <view class='header_right'>
+      <view>{{bD.username}}</view>
+      <view>
+        <text>{{bD.cDate}}</text>发布</view>
+    </view>
+  </view>
+  <view class='information'>联系方式：
+    <text>{{bD.phone}}</text>
+  </view>
+</view>
+<!-- 商机详情 -->
+<view class='details'>
+  <view class='details_title'>{{bD.title}}</view>
+  <view class='details_content'>{{bD.des}}</view>
+</view>
+
+<!-- 底部导航 -->
+<view class='footer'>
+   <view class='share' bindtap='share'>
+    <icon class='iconfont icon-ai-moments'></icon>
+    分享朋友圈
+  </view> 
+    <view class='reward'>
+      <button open-type="share"> <icon class='iconfont icon-fenxiang'></icon>
+    分享好友</button>  
+  </view>  
+  <view class='signUp' wx:if="{{!isMy}}"
+            catchtap='attOrSign' 
+            data-type="2"
+            data-index="{{index}}"
+            data-id="{{bD.id}}">报名</view>
+            <view class='signUp {{bD.isStatus==0||bD.isStatus ==2?"":"gray"}}' wx:if="{{isMy}}"
+            catchtap='{{bD.isStatus==0||bD.isStatus ==2?"toEdit":""}}' 
+            data-id="{{bD.id}}">修改商机</view>
+</view>
+
+<view class="drawImg" wx:if="{{drawImg}}">
+   <view class="drawHtml">
+    <!-- <image class="backImg" src='../../images/mine_bg.png'></image>
+    <view class="drawT">{{bD.title}}</view>
+    <view class="drawC">
+      <text>简介：</text>
+      <view>{{bD.des}}</view>
+    </view>
+    <view class="qrCode">
+      <view>
+        <image src='../../images/mine_bg.png'></image>
+      </view>
+      <view>
+        <view>长按识别二维码</view>
+        <view>响应商机小卡片</view>
+      </view>
+    </view> -->
+     <canvas canvas-id="myCanvas" class="canvas" wx:if="{{drawImg}}"/> 
+     <image src='{{canvasImg}}' catchtap="cancel" catchlongpress='saveImg' wx:if="{{drawImg}}"></image>  
+  </view> 
+   
+    <!-- <view catchtap='saveImg' class="saveImg" wx:if="{{canvasImgBtn}}">点击保存图片</view>   -->
+</view>
+
+<!-- 报名弹框 -->
+<layer inputList="{{inputList}}" title="我要报名" modalShow="{{modalShow}}" catch:myeventBox="myeventBox" data-name="{{info.name}}" data-phone="{{info.company}}" data-name="{{info.company}}"></layer>

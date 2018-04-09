@@ -1,0 +1,221 @@
+.topBar{
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  font-size: 12px;
+  border-bottom: 1px solid #ddd;
+}
+.topBar .bar,.topBar .bar1{
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+}
+.topBar .bar view{
+  border: 1px solid #418ad9;
+  color: #418ad9;
+  padding: 3px;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+.topBar .bar1 view{
+  margin-right: 10px;
+  margin-top: -6px;
+}
+.topBar .bar1 view:last-child{
+  margin-right: 0;
+}
+.topBar .bar1 view:first-child icon{
+  font-size: 14px;
+}
+.topBar .bar1 icon{
+  position: relative;
+  top: 1px;
+  margin-left: 2px;
+}
+.user{
+  border-bottom: 1px solid #ddd;
+}
+.userInfo{
+  padding: 10px 15px 5px;
+  display: flex;
+  display: -webkit-flex;
+}
+.userInfo .header{
+  flex: 2;
+}
+.userInfo .header_right{
+  flex: 9;
+  margin-left: 15px;
+  font-size: 13px;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header image{
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 50%;
+}
+.details{
+  width: 80%;
+  margin: 20px auto 0;
+  padding-bottom:50px;
+}
+.details_title{
+  padding-bottom: 10px;
+}
+.details_content{
+  font-size: 13px;
+}
+.drawImg {
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background-color: rgba(0,0,0,.5);
+  padding:20px;
+  box-sizing: border-box;
+  z-index:10;
+}
+.drawImg canvas {
+  width:100%;
+  height:100%;
+  position:relative;
+  visibility: hidden; 
+}
+.drawImg image  {
+  position:absolute;
+  top:0;
+  left:0; 
+  width:100%;
+  height:100%;
+}
+.saveImg {
+  width:100px;
+  padding:5px;
+  border-radius: 5px;
+  background-color: #0085e2;
+  margin:20px auto 0;
+  font-size:14px;
+  color:white;
+  text-align: center;
+}
+.drawHtml {
+  width:100%;
+  height:100%;
+  position:relative;
+}
+.backImg {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:70px;
+  z-index:0;
+}
+.drawT {
+  position:relative;
+  text-align: center;
+  padding:20px 0;
+  color:white;
+  font-size:16px;
+  font-weight: bold;
+  z-index:2;
+}
+.drawC {
+  margin:20px;
+  font-size:14px;
+}
+.drawC view {
+  margin-top:10px;
+}
+.qrCode {
+  position:absolute;
+  bottom:20px;
+  left:0;
+  width:100%;
+  height:150px;
+  display: flex;
+  align-items:center;
+}
+.qrCode>view {
+  flex:1;
+  box-sizing: border-box;
+  font-size:14px;
+  margin-right:20px;
+  justify-content: center;
+}
+.qrCode>view image {
+  width:130px;
+  height:130px;
+  margin-left:10px;
+}
+/* 底部导航 */
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+  display: -webkit-flex;
+  height: 45px;
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  background-color: #fbffff;
+}
+.share{
+  flex: 2;
+  font-size: 12px;
+  color: #0085e2;
+  position:static;
+  z-index:1;
+}
+.reward{
+  flex: 2;
+  display: flex;
+  width:1px;
+  font-size: 12px;
+} 
+.reward button {
+  flex: 1;
+  height:100%;
+  outline: none;
+  border:none;
+  line-height: normal;
+  font-size:12px;
+  border-radius: 0;
+  position:static;
+  width:100%;
+  z-index:0;
+}
+.share icon{
+  font-size: 16px;
+  display: block;
+}
+.reward icon{
+  display: block;
+  font-size: 16px;
+}
+.signUp{
+  flex: 3;
+  background-color: #0085e2;
+  height: 100%;
+  line-height: 45px;
+  color: #fff;
+  font-size: 14px;
+  position:relative;
+  z-index:1;
+}
+
+/* 联系方式 */
+.information{
+  padding:0px 15px 5px;
+  font-size:14px;
+}
+.gray {
+  background-color: #666;
+}

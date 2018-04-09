@@ -1,0 +1,93 @@
+.scroll{
+  width: 100%;
+  height: 100%;
+  background-color: #efefef;
+}
+.businessList{
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+.businessList:last-child{
+  margin-bottom: 0;
+}
+.top{
+  display: flex;
+  display: -webkit-flex;
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd;
+}
+.header{
+  flex: 2;
+}
+.content{
+  flex: 9;
+  margin-left: 15px;
+}
+.header image{
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 50%;
+  text-align: center;
+}
+.header view{
+  font-size: 12px;
+  margin-top: 5px;
+  text-align: center;
+}
+.content .title{
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+.content .con{
+  font-size: 13px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+.bottom{
+  padding: 13px 15px;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+.bottom view:last-child{
+  color: #418ad9;
+}
+
+.topBar{
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  font-size: 12px;
+  border-bottom: 1px solid #ddd;
+}
+.topBar .bar,.topBar .bar1{
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+}
+.topBar .bar view{
+  border: 1px solid #418ad9;
+  color: #418ad9;
+  padding: 3px;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+.topBar .bar1 view{
+  margin-right: 10px;
+}
+.topBar .bar1 view:last-child{
+  margin-right: 0;
+
+}
+.topBar .bar1 view:first-child icon{
+  font-size: 14px;
+}
+.topBar .bar1 icon{
+  position: relative;
+  top: 1px;
+  margin-left: 2px;
+}

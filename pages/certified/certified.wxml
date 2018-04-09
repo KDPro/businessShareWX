@@ -1,0 +1,6 @@
+<!-- 实名认证 -->
+<view class='user_card'>上传您的身份证</view>
+<view class='upload' bindtap='upLoad'>
+  <icon class='iconfont icon-jiajianzujianjiahao'></icon>
+</view>
+<view class='upload_btn'>立即上传</view>

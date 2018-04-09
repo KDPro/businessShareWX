@@ -1,0 +1,99 @@
+.login{
+  width: 100%;
+}
+.sart{
+  color: red;
+  padding: 0 5px 0 2px;
+}
+.title{
+  text-align: center;
+  color: #505050;
+  padding: 20px 0 20px;
+}
+.choose{
+  display: flex;
+  justify-content: center;
+}
+.choose label{
+  width: 30%;
+  text-align: center;
+  color: #7b7b7b;
+}
+.choose radio{
+  transform:scale(0.7);
+}
+.section{
+  width: 85%;
+  margin: 0 auto;
+}
+.itemView{
+  margin-top: 20px;
+  justify-content: flex-start;
+  display: flex;
+  align-items: center;
+}
+.itemView>text{
+  font-size: 14px;
+  width: 70px;
+  text-align: right;
+  display: inline-block;
+  padding-right: 10px;
+}
+.itemView input.input{
+  height: 35px; 
+  border: 1px solid lightgray;
+  border-radius: 25px;
+  padding-left: 15px;
+  flex:1;
+}
+.itemView textarea.input{
+  width:auto;
+  height: 100px; 
+  border: 1px solid lightgray;
+  border-radius:10px;
+  padding-left: 15px;
+  box-sizing: border-box;
+  padding:10px;
+  flex:1;
+}
+.loginbtn{
+  margin-left: 15px; 
+  margin-right: 15px; 
+  margin-top: 35px;              
+  border-radius: 40px;
+  background-color: #0085e2;
+  color: #fff;
+  height: 40px;
+  line-height: 40px;
+}
+.login_btn{
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 300;
+  font-size: 16px;
+  text-decoration: underline;
+}
+.verification{
+  width: calc(100% - 100px);
+  display: flex;
+  display: -webkit-flex;
+  height: 35px;
+  line-height: 35px;
+}
+.verification view{
+  flex: 1;
+}
+.verification view:last-child{
+  font-size: 12px;
+  background-color: #0085e2;
+  text-align: center;
+  border-radius: 18px;
+  color: #fff;
+  margin-left: 5px;
+}
+.verification view input{
+  height: 35px;
+  border: 1px solid lightgray;
+  border-radius: 25px;
+  padding-left: 5px;
+}

@@ -1,0 +1,19 @@
+<!-- 报名商机 -->
+<scroll-view class='scroll' scroll-y lower-threshold enable-back-to-top bindscrolltolower="scrolltolower">
+  <view class='businessList' wx:for="{{businessList}}" wx:key="{{index}}">
+        <view class='top'>
+          <view class='header'>
+            <image src='{{item.url}}'></image>
+            <view>{{item.username}}</view>
+          </view>
+          <view class='content'>
+            <view class='title'>{{item.title}}</view>
+            <view class='con'>{{item.des}}</view>
+          </view>
+        </view> 
+        <view class='bottom'>
+          <view><text>{{item.cDate}}</text>发布</view>
+          <view bindtap='details' data-id="{{item.id}}">查看详情》</view>
+        </view>
+  </view>
+</scroll-view >

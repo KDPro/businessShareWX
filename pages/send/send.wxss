@@ -1,0 +1,43 @@
+.send{
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.sart{
+  color: red;
+  padding: 0 5px 0 2px;
+}
+.title{
+  border: 1px solid #ddd;
+  height: 35px;
+  border-radius: 20px;
+  padding-left: 15px;
+  margin: 10px 0 10px;
+  font-size: 14px;
+}
+.content{
+  width: calc(100% - 10px);
+  height: 200px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-top: 10px;
+  font-size: 14px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.send_btn{
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  color: #fff;
+  border-radius: 20px;
+  background-color: #0085e2;
+  margin: 20px 0 10px;
+}
+.mine_business{
+  text-align: center;
+  font-weight: 300;
+  font-size: 16px;
+  text-decoration: underline;
+}
